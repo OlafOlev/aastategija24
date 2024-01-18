@@ -410,12 +410,14 @@
 
 </script>
 <script>
+    // Funktsioon, mis kuvab valitud päeva ajakava
     function showAjakava(day) {
+        // Leiab vastavad HTML elemendid päeva id-de põhjal
         const ajakava25 = document.getElementById("Ajakava25");
         const ajakava26 = document.getElementById("Ajakava26");
         const ajakava27 = document.getElementById("Ajakava27");
 
-
+        // Kontrollib, millise päeva ajakava kuvada ja peita teised
         if (day === 26) {
             ajakava26.style.display = "block";
             ajakava27.style.display = "none";
@@ -430,6 +432,44 @@
             ajakava25.style.display = "block";
         }
     }
+
+    // Funktsioon, mis kuvab valitud sektsiooni (Missioon, Võitjad, Ajalugu)
+    function showHistory(I) {
+        // Leiab vastavad HTML elemendid sektsiooni id-de põhjal
+        const mission = document.getElementById("Mission");
+        const winners = document.getElementById("Winners");
+        const history = document.getElementById("History");
+
+        // Leiab noole-elementide (arrow) elemendid
+        const missionArrow = document.getElementById("MissionArrow");
+        const winnersArrow = document.getElementById("WinnersArrow");
+        const historyArrow = document.getElementById("HistoryArrow");
+
+        // Kontrollib, millist sektsiooni kuvada ja peita teised, ning animeerib noolte pööramist
+        if (I === "Mission") {
+            mission.style.display = "block";
+            winners.style.display = "none";
+            history.style.display = "none";
+            missionArrow.style.transform = "rotate(90deg)";
+            winnersArrow.style.transform = "rotate(180deg)";
+            historyArrow.style.transform = "rotate(180deg)";
+        } else if (I === "Winners") {
+            mission.style.display = "none";
+            winners.style.display = "block";
+            history.style.display = "none";
+            winnersArrow.style.transform = "rotate(90deg)";
+            missionArrow.style.transform = "rotate(180deg)";
+            historyArrow.style.transform = "rotate(180deg)";
+        } else if (I === "History") {
+            mission.style.display = "none";
+            winners.style.display = "none";
+            history.style.display = "block";
+            historyArrow.style.transform = "rotate(90deg)";
+            missionArrow.style.transform = "rotate(180deg)";
+            winnersArrow.style.transform = "rotate(180deg)";
+        }
+    }
 </script>
+
 </body>
 </html>
