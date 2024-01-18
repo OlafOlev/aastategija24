@@ -3,27 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Device Redirect</title>
+    <title>Seadme Ümbersuunamine</title>
 </head>
 <body>
-    <!-- Content if JavaScript is disabled or redirection fails -->
-    <p>If you are not redirected, <a href="./desktop">click here</a>.</p>
+    <!-- Sisu juhul, kui JavaScript on keelatud või ümbersuunamine ebaõnnestub -->
+    <p>Kui ümbersuunamine ei toimu, <a href="./desktop">kliki siia</a>.</p>
 
-    <!-- Move the script tag to the bottom and add async attribute -->
     <script async>
-        // Function to check if the device is mobile
-        function isMobileDevice() {
+        // Funktsioon, mis kontrollib, kas seade on mobiilne
+        function onMobiiliseade() {
             return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
         }
 
-        // Function to redirect based on the device
-        function redirectBasedOnDevice() {
-            var targetURL = isMobileDevice() ? './mobile' : './desktop';
-            window.location.href = targetURL;
+        // Funktsioon, mis suunab ümber sõltuvalt seadmest
+        function suunaUmberPõhinebSeadmest() {
+            var sihtURL = onMobiiliseade() ? './mobile' : './desktop';
+            window.location.href = sihtURL;
         }
 
-        // Auto-run the redirect function when the page loads
-        window.onload = redirectBasedOnDevice;
+        // Käivita ümbersuunamise funktsioon automaatselt, kui leht on laetud
+        window.onload = suunaUmberPõhinebSeadmest;
+    </script>
+
+    <!-- Kutsu ümbersuunamise funktsioon välja, kui leht on täielikult laetud -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            suunaUmberPõhinebSeadmest();
+        });
     </script>
 </body>
 </html>
