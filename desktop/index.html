@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        body {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+            overflow-x: hidden;
+        }
+
+        .KoguLehtHifiApril25th {
+            width: 100%;
+            max-width: 100%;
+            height: 100%;
+            min-height: 4908px;
+            position: relative;
+            background: white;
+            margin: 0 auto;
+        }
+
+        .scroll-container {
+            max-height: 500px;
+            overflow-y: scroll;
+            overflow-x: hidden;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Style the button to look like bold text */
+        .text-button {
+			background: none;
+			border: none;
+			color: black; /* Set your desired text color */
+			cursor: pointer;
+			text-decoration: none;
+			font-size: 20px;
+			font-family: Montserrat;
+			font-weight: 400;
+			word-wrap: break-word;
+		}
+
+		.text-button:hover {
+			color: #ffffff;
+			font-weight: bold; /* Add this line to make the text bold */
+			background-color: #00B89D;
+			border-radius: 5px;
+			padding: 5px 10px;
+		}
+
+		.button-container {
+			position: absolute;
+			flex-direction: column;
+			justify-content: flex-start;
+			align-items: flex-start;
+			gap: 10px;
+			display: inline-flex;
+		}
+
+        Option {
+            cursor: pointer;
+        }
+
+        .OptionsButtons:hover {
+			cursor: pointer;
+            border: 2px solid white;
+        }
+
+        .Ajakava:hover {
+            background: #ffffff;
+            border-radius: 10px;
+            margin: 5px;
+            transform: scale(1); /* Adjust the scale factor as needed */
+
+        }
+
+        .Ajakava {
+            width: 807px;
+            height: 88px;
+            padding-left: 21.75px;
+            padding-right: 21.75px;
+            padding-top: 25.51px;
+            padding-bottom: 25.51px;
+            left: 0px;
+            top: -12px;
+            justify-content: center;
+            align-items: center;
+        }
+		
+		
+		
+		
+		
+		.AvanevDropdownMenu {
+            cursor: pointer;
+			border-radius:9px;
+        }
+
+        .AvanevDropdownMenu:hover {
+            background-color: #eaeaea; /* Add your preferred hover background color */
+			
+        }
+
+        .Dropdown {
+            display: flex;
+            align-items: center;
+        }
+
+        .AvanevDropdownMenu .Dropdown i {
+            transition: transform 0.3s ease;
+        }
+
+        .AvanevDropdownMenu:hover .Dropdown i {
+            transform: rotate(180deg); /* Adjust the rotation angle as needed */
+        }
+
+        .OurMission,
+        .Winners,
+        .History {
+            transition: opacity 0.3s ease;
+        }
+
+        .AvanevDropdownMenu:hover + div {
+            opacity:1;
+        }
+
+    </style>
+<body>
+<div class="KoguLehtHifiApril25th" style="width: 1440px; height: 4908px; position: relative; background: white">
+    <div class="LandingPage"
+         style="width: 1440px; height: 1024px; left: 0px; top: 0px; position: absolute; background: white">
+        <img class="Logo20241" style="width: 222px; height: 156px; left: 21px; top: 18px; position: absolute"
+             src="images/v41_245.png"/>
+        <div class="UnitedBySkills" style="width: 590px; height: 185px; left: 111px; top: 321px; position: absolute">
+            <div class="UnitedBySkills"
+                 style="width: 590px; height: 185px; left: 0px; top: 0px; position: absolute; color: black; font-size: 72px; font-family: Montserrat; font-weight: 700; word-wrap: break-word">
+                United By Skills
+            </div>
+            <div class="Tekst30p" style="width: 525px; height: 59px; left: 5px; top: 93px; position: absolute">
+                <div class="Tekst30p"
+                     style="left: 0px; top: 0px; position: absolute; color: black; font-size: 30px; font-family: Montserrat; font-style: italic; font-weight: 300; word-wrap: break-word">
+                    Just For The Thrill Of It
+                </div>
+            </div>
+        </div>
+        <div class="Pealkiri48p" style="width: 407px; height: 113px; left: 94px; top: 255px; position: absolute">
+            <div class="Pealkiri" style="left: 21px; top: 0px; position: absolute; text-align: right"><span
+                    style="color: black; font-size: 48px; font-family: Montserrat; font-weight: 700; word-wrap: break-word">25-27 April 20</span><span
+                    style="color: #00B89D; font-size: 48px; font-family: Montserrat; font-weight: 700; word-wrap: break-word">24</span>
+            </div>
+        </div>
+		
+		<div class="button-container" style="height: 43px; padding-top: 10px; padding-bottom: 10px; padding-left: 35px; padding-right: 10px; left: 974px; top: 24px;">
+			<a href="#Schedule" class="text-button">Schedule</a>
+		</div>
+
+		<div class="button-container" style="height: 43px; padding-top: 10px; padding-bottom: 10px; padding-left: 35px; padding-right: 37px; left: 1253px; top: 24px;">
+			<a href="#Sponsors" class="text-button">Sponsors</a>
+		</div>
+
+		<div class="button-container" style="padding: 10px; left: 802px; top: 24px;">
+			<div class="text-button">Baltic Games<br/></div>
+		</div>
+
+		<div class="button-container" style="height: 43px; padding-top: 10px; padding-bottom: 10px; padding-left: 47px; padding-right: 42px; left: 1117px; top: 24px;">
+			<a href="#About" class="text-button">About</a>
+		</div>
+        <div class="Tekst30p" style="width: 906px; height: 420px; left: 115px; top: 558px; position: absolute">
+            <div class="Tekst30p" style="width: 884.43px; height: 420px; left: 0px; top: 0px; position: absolute"><span
+                    style="color: black; font-size: 30px; font-family: Montserrat; font-weight: 400; line-height: 45px; word-wrap: break-word">XXIX Baltic Games for Vocational Schools take place in April 2024. Athletes from </span><span
+                    style="color: black; font-size: 30px; font-family: Montserrat; font-weight: 700; line-height: 45px; word-wrap: break-word">Estonia</span><span
+                    style="color: black; font-size: 30px; font-family: Montserrat; font-weight: 400; line-height: 45px; word-wrap: break-word">, </span><span
+                    style="color: black; font-size: 30px; font-family: Montserrat; font-weight: 700; line-height: 45px; word-wrap: break-word">Latvia</span><span
+                    style="color: black; font-size: 30px; font-family: Montserrat; font-weight: 400; line-height: 45px; word-wrap: break-word">, and </span><span
+                    style="color: black; font-size: 30px; font-family: Montserrat; font-weight: 700; line-height: 45px; word-wrap: break-word">Lithuania</span><span
+                    style="color: black; font-size: 30px; font-family: Montserrat; font-weight: 400; line-height: 45px; word-wrap: break-word"> compete in basketball, volleyball, and table tennis. Proudly presented by the Estonian Vocational School Sports Federation in partnership with VOCO.<br/><br/>Join the celebration of Baltic talent and sportsmanship!</span>
+            </div>
+        </div>
+    </div>
+
+    <div id="Sponsors" class="ContactSponsorsPage"
+         style="width: 1440px; height: 819px; left: -15px; top: 3243px; position: absolute; background: white">
+        <div class="Tekst30p" style="width: 140px; height: 37px; left: 648px; top: 749px; position: absolute"></div>
+        <div class="Tekst20p" style="width: 54px; height: 24px; left: 220px; top: 625px; position: absolute"></div>
+        <div class="Group5" style="width: 1452px; height: 1092.50px; left: 0px; top: 46px; position: absolute">
+            <div class="Rectangle1"
+                 style="width: 1452px; height: 923px; left: 0px; top: 169.50px; position: absolute; background: white"></div>
+            <img class="AinultKiriFunmaker1"
+                 style="width: 425px; height: 167px; left: 63px; top: 270px; position: absolute"
+                 src="images/v41_254.png"/>
+            <img class="Easl1" style="width: 232px; height: 233px; left: 604px; top: 237px; position: absolute"
+                 src="images/v41_281.png"/>
+            <img class="Unitedmotors768x731"
+                 style="width: 425px; height: 40px; left: 247px; top: 611px; position: absolute"
+                 src="images/v41_282.png"/>
+            <div class="VocoT2ispikkLogoMust1"
+                 style="width: 423px; height: 156px; left: 865px; top: 0px; position: absolute">
+                <img class="VOCOlogo" style="width: 380px; height: 139px; left: 20px; top: 29px; position: absolute"
+                     src="images/voco_logo-01.png">
+            </div>
+            <img class="KulkaLogoMust1" style="width: 425px; height: 204px; left: 952px; top: 252px; position: absolute"
+                 src="images/v41_285.png"/>
+            <img class="CroppedCroppedCropped2017logoEkPikkKoosinglisktekstigaOrig1"
+                 style="width: 284px; height: 110px; left: 261px; top: 0px; position: absolute"
+                 src="images/v204_185.png"/>
+        </div>
+        <img class="Group" style="width: 315.86px; height: 94.03px; left: 788px; top: 620px; position: absolute"
+             src="images/kultuurmin.png">
+    </div>
+    <div class="Rectangle1"
+         style="width: 14400px; height: 721px; left: -5000px; top: 4187px; position: absolute; background: black"></div>
+    <div class="Group7" style="width: 343px; height: 330px; left: 548px; top: 4329px; position: absolute">
+        <div class="RegNumber80110180Telefon37256111866EPostTiitEkkslEeAardla23bTartuSkypeEkkslEvssfWwwEkkslEeTiitTammaruPeasekretRSecretaryGeneral"
+             style="left: 41px; top: 0px; position: absolute"><span
+                style="color: white; font-size: 20px; font-family: Montserrat; font-weight: 400; line-height: 30px; word-wrap: break-word">Reg. number: 80110180     Telefon: +372 56 111 866     <br>E-post: </span><span
+                style="color: white; font-size: 20px; font-family: Montserrat; font-weight: 400; text-decoration: underline; line-height: 30px; word-wrap: break-word">tiit@ekksl.ee</span><span
+                style="color: white; font-size: 20px; font-family: Montserrat; font-weight: 400; line-height: 30px; word-wrap: break-word">    <br> <br>Aardla 23b, Tartu   <br>  Skype: EKKSL_EVSSF     <br><br/>www.ekksl.ee   <br>  <br/>Tiit Tammaru<br/>Peasekretär/Secretary General</span>
+        </div>
+        <i class="fa-solid fa-user"
+           style="width: 18px; height: 20px; left: 4px; top: 275px; position: absolute; color: white"></i>
+        <i class="fa-solid fa-house"
+           style="width: 18px; height: 20px; left: 4px; top: 124px; position: absolute; color: white"></i>
+        <i class="fa-brands fa-skype"
+           style="width: 30px; height: 30px; left: 5px; top: 155px; position: absolute; color: white"></i>
+        <i class="fa-solid fa-envelope"
+           style="width: 26px; height: 20px; left: 5px; top: 65px; position: absolute; color: white"></i>
+        <i class="fa-solid fa-phone"
+           style="width: 20px; height: 20px; left: 5px; top: 35px; position: absolute; color: white"></i>
+    </div>
+    <img class="1"
+         style="width: 344px; height: 1344px; left: 1397px; top: 375px; position: absolute; transform: scaleX(-1);filter:grayscale(100%); transform-origin: 0 0"
+         src="images/v41_300.png"/>
+    <div class="Tekst24p" style="width: 603px; height: 29px; left: 418px; top: 4772px; position: absolute">
+        <div class="Tekst24p"
+             style="left: 0px; top: 0px; position: absolute; color: white; font-size: 24px; font-family: Montserrat; font-weight: 300; word-wrap: break-word">
+            Estonian Vocational School Sport Federation NPO
+        </div>
+    </div>
+</div>
+    <div class="LocationsDatesPage"
+         style="width: 1440px; height: 1024px; left: 0px; top: 1070px; position: absolute">
+		<div class="background"
+			 style="width: 20000px; height: 1024px; right:-250px; top: 0px; position: absolute; background:  #00B89D;"></div>
+        <img class="Dropshadow"
+             style="width: 775px; height: 1024px; left: -52px; top: 0px; position: absolute; box-shadow: 0px 10px 4px rgba(0, 0, 0, 0.02) inset;"
+             src="images/v36_236.png"/>
+		<div class="Rectangle4"
+			 style="width: 20000px; height: 1024px; right:1492px; top: 0px; position: absolute; background:  #00A78E; transform: scaleX(-1)"></div>
+        <div class="Rectangle4"
+             style="width: 312px; height: 631px; left: 117px; top: 346px; position: absolute; background: white; border-radius: 142px; backdrop-filter: blur(4px)"></div>
+        <img class="Korvpallurid"
+             style="width: 493px; height: 871px; left: 55px; top: 266px;filter:grayscale(100%); position: absolute"
+             src="images/v41_308.png"/>
+        <img class="TextureShapeThingy1"
+             style="width: 578.09px; height: 1034.91px; left: 1255px; top: 60.20px; position: absolute; transform: rotate(-9.79deg); transform-origin: 0 0"
+             src="images/v36_228.png"/>
+		<div class="background"
+			 style="width: 500px; height: 1024px; left:1645px; top: 55px; position: absolute; background:  white;transform:rotate(45)"></div>
+        <div id="Schedule" class="Schedule"
+             style="left: -58px; top: -27px; position: absolute; color: rgba(0, 0, 0, 0.10); font-size: 320px; font-family: Montserrat; font-weight: bolder; word-wrap: break-word">
+            Schedule
+        </div>
+
+
+        <!--April 25th-->
+        <div id="Ajakava25"
+             style="width: 779px; height: 496px; left: 548px; top: 390px; position: absolute; display: block">
+            <div class="April25thText">
+                <div class="Ajakava">
+                    <div class="000900RegistreerimineJaHommikukohvOsalejatele"
+                         style="width: 737px; height: 48.75px; left: 21px; top: 33.62px; "><span
+                            style="color: black; font-size: 24px; font-family: Montserrat; font-weight: bolder; word-wrap: break-word">13.00 - 15.00: Arrival and accommodation <br/></span><span
+                            style="color: black; font-size: 24px; font-family: Montserrat; font-weight: 400; word-wrap: break-word">         @ Tartu Vocational College (Kopli 1, Tartu, C-korpus)<br/>                                                       <br/><br/><br/><br/></span>
+                    </div>
+                </div>
+                <div class="Ajakava">
+                    <div class="000900RegistreerimineJaHommikukohvOsalejatele"
+                         style="width: 737px; height: 27.32px; left: 21px; top: 18.84px; color: black; font-size: 24px; font-family: Montserrat; font-weight: bolder; word-wrap: break-word">
+                        15.00 - 16.30: Lunch<br/> <br/><br/><br/><br/>
+                    </div>
+                </div>
+                <div class="Ajakava">
+                    <div class="000900RegistreerimineJaHommikukohvOsalejatele"
+                         style="width: 737px; height: 44.13px; left: 21px; top: 30.43px; "><span
+                            style="color: black; font-size: 24px; font-family: Montserrat; font-weight: bolder; word-wrap: break-word">16.00 - 16.30: Delegation leaders meet and accreditation<br/></span><span
+                            style="color: black; font-size: 24px; font-family: Montserrat; font-weight: 400; word-wrap: break-word">         @ Tartu Vocational College<br/><br/><br/><br/></span>
+                    </div>
+                </div>
+                <div class="Ajakava">
+                    <div class="000900RegistreerimineJaHommikukohvOsalejatele"
+                         style="width: 737px; height: 58.42px; left: 21px; top: 40.29px; "><span
+                            style="color: black; font-size: 24px; font-family: Montserrat; font-weight: bolder; word-wrap: break-word">18.00 - 19.30: Opening ceremony<br/></span><span
+                            style="color: black; font-size: 24px; font-family: Montserrat; font-weight: 400; word-wrap: break-word">         @ Estonian National Museum (Muuseumi tee 2 Tartu)<br/>         <br/><br/><br/><br/></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--April 27th-->
+        <div id="Ajakava27" class="scroll-container"
+             style="width: 779px; height: 496px; left: 548px; top: 390px; position: absolute;display:none">
+            <div class="April27thText">
+                <div class="Ajakava">
+                    <div class="000900RegistreerimineJaHommikukohvOsalejatele" style="width: 763.49px; height: 40.77px">
+                        <span style="color: black; font-size: 24px; font-family: Montserrat; font-weight: bolder; word-wrap: break-word">7.00 - 9.30: Breakfast<br/></span><span
+                            style="color: black; font-size: 24px; font-family: Montserrat; font-weight: 400; word-wrap: break-word">         @ Tartu Vocational College <br/>                                                       <br/><br/><br/><br/></span>
+                    </div>
+                </div>
+                <div class="Ajakava">
+                    <div class="000900RegistreerimineJaHommikukohvOsalejatele" style="width: 737px; height: 34.04px">
+                        <span style="color: black; font-size: 24px; font-family: Montserrat; font-weight: bolder; word-wrap: break-word">9.00 - 10.00: Volleyball LIT - LAT </span><span
+                            style="color: black; font-size: 24px; font-family: Montserrat; font-style: italic; font-weight: bolder; word-wrap: break-word">(young women)<br/></span><span
+                            style="color: black; font-size: 24px; font-family: Montserrat; font-weight: 400; word-wrap: break-word">         @ Variku Sports Hall (Aianduse 4 Tartu)<br/>                        <br/><br/><br/><br/></span>
+                    </div>
+                </div>
+                <div class="Ajakava">
+                    <div class="000900RegistreerimineJaHommikukohvOsalejatele" style="width: 737px; height: 33.62px">
+                        <span style="color: black; font-size: 24px; font-family: Montserrat; font-weight: bolder; word-wrap: break-word">9.00-10.30: Basketball LIT - LAT </span><span
+                            style="color: black; font-size: 24px; font-family: Montserrat; font-style: italic; font-weight: bolder; word-wrap: break-word">(young men)<br/></span><span
+                            style="color: black; font-size: 24px; font-family: Montserrat; font-weight: 400; word-wrap: break-word">         @ Variku Sports Hall <br/><br/><br/><br/></span>
+                    </div>
+                </div>
+                <div class="Ajakava">
+                    <div class="000900RegistreerimineJaHommikukohvOsalejatele" style="width: 737px; height: 32.78px">
+                        <span style="color: black; font-size: 24px; font-family: Montserrat; font-weight: bolder; word-wrap: break-word">10.45 - 12.15: Volleyball LIT - LAT </span><span
+                            style="color: black; font-size: 24px; font-family: Montserrat; font-style: italic; font-weight: bolder; word-wrap: break-word">(young men) <br/></span><span
+                            style="color: black; font-size: 24px; font-family: Montserrat; font-weight: 400; word-wrap: break-word">         @ Variku Sports Hall<br/>         <br/><br/><br/><br/></span>
+                    </div>
+                </div>
+                <div class="Ajakava">
+                    <div class="000900RegistreerimineJaHommikukohvOsalejatele" style="width: 737px; height: 32.78px">
+                        <span style="color: black; font-size: 24px; font-family: Montserrat; font-weight: bolder; word-wrap: break-word">10.45 - 12.15: 3x3 basketball LAT - LIT </span><span
+                            style="color: black; font-size: 24px; font-family: Montserrat; font-style: italic; font-weight: bolder; word-wrap: break-word">(young women)<br/></span><span
+                            style="color: black; font-size: 24px; font-family: Montserrat; font-weight: 400; word-wrap: break-word">         @ Variku Sports Hall<br/>         <br/><br/><br/><br/></span>
+                    </div>
+                </div>
+                <div class="Ajakava">
+                    <div class="000900RegistreerimineJaHommikukohvOsalejatele" style="width: 737px; height: 39.09px">
+                        <span style="color: black; font-size: 24px; font-family: Montserrat; font-weight: bolder; word-wrap: break-word">11.30-12.00: 3x3 Basketball LIT - LAT </span><span
+                            style="color: black; font-size: 24px; font-family: Montserrat; font-style: italic; font-weight: bolder; word-wrap: break-word">(women)<br/></span><span
+                            style="color: black; font-size: 24px; font-family: Montserrat; font-weight: 400; word-wrap: break-word">         @ Variku Sports Hall<br/>         <br/><br/><br/><br/></span>
+                    </div>
+                </div>
+                <div class="Ajakava">
+                    <div class="000900RegistreerimineJaHommikukohvOsalejatele" style="width: 737px; height: 36.99px">
+                        <span style="color: black; font-size: 24px; font-family: Montserrat; font-weight: bolder; word-wrap: break-word">12.15 - 12.45: 3x3 Basketball LIT - LAT </span><span
+                            style="color: black; font-size: 24px; font-family: Montserrat; font-style: italic; font-weight: bolder; word-wrap: break-word">(men)<br/></span><span
+                            style="color: black; font-size: 24px; font-family: Montserrat; font-weight: 400; word-wrap: break-word">         @ Variku Sports Hall<br/>         <br/><br/><br/><br/></span>
+                    </div>
+                </div>
+                <div class="Ajakava">
+                    <div class="000900RegistreerimineJaHommikukohvOsalejatele" style="width: 737px; height: 34.46px">
+                        <span style="color: black; font-size: 24px; font-family: Montserrat; font-weight: bolder; word-wrap: break-word">12.30 - 14.00 : Lunch<br/></span><span
+                            style="color: black; font-size: 24px; font-family: Montserrat; font-weight: 400; word-wrap: break-word">         @ Tartu Vocational College<br/>         <br/><br/><br/><br/></span>
+                    </div>
+                </div>
+                <div class="Ajakava">
+                    <div class="000900RegistreerimineJaHommikukohvOsalejatele" style="width: 737px; height: 54.64px">
+                        <span style="color: black; font-size: 24px; font-family: Montserrat; font-weight: bolder; word-wrap: break-word">14.00: Meeting of the heads of delegation – confirmation of the results.<br/></span><span
+                            style="color: black; font-size: 24px; font-family: Montserrat; font-weight: 400; word-wrap: break-word">         @ Tartu Vocational College<br/>         <br/><br/><br/><br/></span>
+                    </div>
+                </div>
+                <div class="Ajakava">
+                    <div class="000900RegistreerimineJaHommikukohvOsalejatele" style="width: 737px; height: 33.62px">
+                        <span style="color: black; font-size: 24px; font-family: Montserrat; font-weight: bolder; word-wrap: break-word">14.30             : Closing and awarding ceremony<br/></span><span
+                            style="color: black; font-size: 24px; font-family: Montserrat; font-weight: 400; word-wrap: break-word">         @ Tartu Vocational College<br/>         <br/><br/><br/><br/></span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!--April 26th-->
+        <div id="Ajakava26" class="scroll-container"
+             style="width: 779px; height: 496px; left: 548px; top: 390px; position: absolute; display: none">
+            <div class="April26thText">
+                <div class="Ajakava">
+                    <div class="000900RegistreerimineJaHommikukohvOsalejatele" style="width: 763.49px; height: 36.99px">
+                        <span style="color: black; font-size: 24px; font-family: Montserrat; font-weight: bolder; word-wrap: break-word">7.30 - 9.30: Breakfast<br/></span><span
+                            style="color: black; font-size: 24px; font-family: Montserrat; font-weight: 400; word-wrap: break-word">         @ Tartu Vocational College <br/>                                                       <br/><br/><br/><br/></span>
+                    </div>
+                </div>
+                <div class="Ajakava">
+                    <div class="000900RegistreerimineJaHommikukohvOsalejatele" style="width: 737px; height: 38.67px">
+                        <span style="color: black; font-size: 24px; font-family: Montserrat; font-weight: bolder; word-wrap: break-word">9.30 - 11.00: Volleyball EST - LAT </span><span
+                            style="color: black; font-size: 24px; font-family: Montserrat; font-style: italic; font-weight: bolder; word-wrap: break-word">(young women)<br/></span><span
+                            style="color: black; font-size: 24px; font-family: Montserrat; font-weight: 400; word-wrap: break-word">         @ Variku Sports Hall (Aianduse 4 Tartu)<br/>                        <br/><br/><br/><br/></span>
+                    </div>
+                </div>
+                <div class="Ajakava">
+                    <div class="000900RegistreerimineJaHommikukohvOsalejatele" style="width: 737px; height: 35.72px">
+                        <span style="color: black; font-size: 24px; font-family: Montserrat; font-weight: bolder; word-wrap: break-word">9.30 - 11.00: basketball EST - LAT </span><span
+                            style="color: black; font-size: 24px; font-family: Montserrat; font-style: italic; font-weight: bolder; word-wrap: break-word">(young men)<br/></span><span
+                            style="color: black; font-size: 24px; font-family: Montserrat; font-weight: 400; word-wrap: break-word">         @ Variku Sports Hall <br/><br/><br/><br/></span>
+                    </div>
+                </div>
+                <div class="Ajakava">
+                    <div class="000900RegistreerimineJaHommikukohvOsalejatele" style="width: 737px; height: 31.52px">
+                        <span style="color: black; font-size: 24px; font-family: Montserrat; font-weight: bolder; word-wrap: break-word">10.00 - 16.00: Tabletennis<br/></span><span
+                            style="color: black; font-size: 24px; font-family: Montserrat; font-weight: 400; word-wrap: break-word">         @ Tartu Vocational College<br/>       <br/><br/><br/><br/></span>
+                    </div>
+                </div>
+                <div class="Ajakava">
+                    <div class="000900RegistreerimineJaHommikukohvOsalejatele" style="width: 737px; height: 32.78px">
+                        <span style="color: black; font-size: 24px; font-family: Montserrat; font-weight: bolder; word-wrap: break-word">11.15 - 12.45: Volleyball EST - LAT </span><span
+                            style="color: black; font-size: 24px; font-family: Montserrat; font-style: italic; font-weight: bolder; word-wrap: break-word">(young men)<br/></span><span
+                            style="color: black; font-size: 24px; font-family: Montserrat; font-weight: 400; word-wrap: break-word">         @ Variku Sports Hall<br/>       <br/><br/><br/><br/></span>
+                    </div>
+                </div>
+                <div class="Ajakava">
+                    <div class="000900RegistreerimineJaHommikukohvOsalejatele" style="width: 737px; height: 32.36px">
+                        <span style="color: black; font-size: 24px; font-family: Montserrat; font-weight: bolder; word-wrap: break-word">11.15 - 11.45: 3x3 Basketball EST - LAT </span><span
+                            style="color: black; font-size: 24px; font-family: Montserrat; font-style: italic; font-weight: bolder; word-wrap: break-word">(young women)<br/></span><span
+                            style="color: black; font-size: 24px; font-family: Montserrat; font-weight: 400; word-wrap: break-word">         @ Variku Sports Hall<br/>       <br/><br/><br/><br/></span>
+                    </div>
+                </div>
+                <div class="Ajakava">
+                    <div class="000900RegistreerimineJaHommikukohvOsalejatele" style="width: 737px; height: 32.36px">
+                        <span style="color: black; font-size: 24px; font-family: Montserrat; font-weight: bolder; word-wrap: break-word">12.00 - 12.30: 3x3 Basketball EST - LIT </span><span
+                            style="color: black; font-size: 24px; font-family: Montserrat; font-style: italic; font-weight: bolder; word-wrap: break-word">(men)<br/></span><span
+                            style="color: black; font-size: 24px; font-family: Montserrat; font-weight: 400; word-wrap: break-word">         @ Variku Sports Hall<br/>       <br/><br/><br/><br/></span>
+                    </div>
+                </div>
+                <div class="Ajakava">
+                    <div class="000900RegistreerimineJaHommikukohvOsalejatele" style="width: 740.78px; height: 36.14px">
+                        <span style="color: black; font-size: 24px; font-family: Montserrat; font-weight: bolder; word-wrap: break-word">12.45 - 13.15: 3x3 Basketball EST - LIT </span><span
+                            style="color: black; font-size: 24px; font-family: Montserrat; font-style: italic; font-weight: bolder; word-wrap: break-word">(women)<br/></span><span
+                            style="color: black; font-size: 24px; font-family: Montserrat; font-weight: 400; word-wrap: break-word">         @ Variku Sports Hall<br/>       <br/><br/><br/><br/></span>
+                    </div>
+                </div>
+                <div class="Ajakava">
+                    <div class="000900RegistreerimineJaHommikukohvOsalejatele" style="width: 737px; height: 32.78px">
+                        <span style="color: black; font-size: 24px; font-family: Montserrat; font-weight: bolder; word-wrap: break-word">13.00 - 15.00: Lunch<br/></span><span
+                            style="color: black; font-size: 24px; font-family: Montserrat; font-weight: 400; word-wrap: break-word">         @ Tartu Vocational College<br/>       <br/><br/><br/><br/></span>
+                    </div>
+                </div>
+                <div class="Ajakava">
+                    <div class="000900RegistreerimineJaHommikukohvOsalejatele" style="width: 737px; height: 37.41px">
+                        <span style="color: black; font-size: 24px; font-family: Montserrat; font-weight: bolder; word-wrap: break-word">13.30 - 14.00: 3x3 Basketball EST - LIT </span><span
+                            style="color: black; font-size: 24px; font-family: Montserrat; font-style: italic; font-weight: bolder; word-wrap: break-word">(young women)<br/></span><span
+                            style="color: black; font-size: 24px; font-family: Montserrat; font-weight: 400; word-wrap: break-word">         @ Variku Sports Hall<br/>       <br/><br/><br/><br/></span>
+                    </div>
+                </div>
+                <div class="Ajakava">
+                    <div class="000900RegistreerimineJaHommikukohvOsalejatele" style="width: 737px; height: 37.41px">
+                        <span style="color: black; font-size: 24px; font-family: Montserrat; font-weight: bolder; word-wrap: break-word">13.30 - 15.00: Headmasters competition <br/></span><span
+                            style="color: black; font-size: 24px; font-family: Montserrat; font-weight: 400; word-wrap: break-word">         @ Tartu Vocational College<br/>       <br/><br/><br/><br/></span>
+                    </div>
+                </div>
+                <div class="Ajakava">
+                    <div class="000900RegistreerimineJaHommikukohvOsalejatele" style="width: 737px; height: 34.46px">
+                        <span style="color: black; font-size: 24px; font-family: Montserrat; font-weight: bolder; word-wrap: break-word">13.00 - 14.30: Volleyball EST - LIT </span><span
+                            style="color: black; font-size: 24px; font-family: Montserrat; font-style: italic; font-weight: bolder; word-wrap: break-word">(young women)<br/></span><span
+                            style="color: black; font-size: 24px; font-family: Montserrat; font-weight: 400; word-wrap: break-word">         @ Variku Sports Hall<br/>       <br/><br/><br/><br/></span>
+                    </div>
+                </div>
+                <div class="Ajakava">
+                    <div class="000900RegistreerimineJaHommikukohvOsalejatele" style="width: 737px; height: 33.20px">
+                        <span style="color: black; font-size: 24px; font-family: Montserrat; font-weight: bolder; word-wrap: break-word">14.30 - 16.00: Basketball EST - LIT </span><span
+                            style="color: black; font-size: 24px; font-family: Montserrat; font-style: italic; font-weight: bolder; word-wrap: break-word">(young men)<br/></span><span
+                            style="color: black; font-size: 24px; font-family: Montserrat; font-weight: 400; word-wrap: break-word">         @ Variku Sports Hall<br/>       <br/><br/><br/><br/></span>
+                    </div>
+                </div>
+                <div class="Ajakava">
+                    <div class="000900RegistreerimineJaHommikukohvOsalejatele" style="width: 737px; height: 33.62px">
+                        <span style="color: black; font-size: 24px; font-family: Montserrat; font-weight: bolder; word-wrap: break-word">14.45 - 16.15: Volleyball EST - LIT </span><span
+                            style="color: black; font-size: 24px; font-family: Montserrat; font-style: italic; font-weight: bolder; word-wrap: break-word">(young men)<br/></span><span
+                            style="color: black; font-size: 24px; font-family: Montserrat; font-weight: 400; word-wrap: break-word">         @ Variku Sports Hall<br/>       <br/><br/><br/><br/></span>
+                    </div>
+                </div>
+                <div class="Ajakava">
+                    <div class="000900RegistreerimineJaHommikukohvOsalejatele" style="width: 737px; height: 34.04px">
+                        <span style="color: black; font-size: 24px; font-family: Montserrat; font-weight: bolder; word-wrap: break-word">16.15 - 16.45: 3x3 basketball EST - LAT </span><span
+                            style="color: black; font-size: 24px; font-family: Montserrat; font-style: italic; font-weight: bolder; word-wrap: break-word">(women)<br/></span><span
+                            style="color: black; font-size: 24px; font-family: Montserrat; font-weight: 400; word-wrap: break-word">         @ Variku Sports Hall<br/>       <br/><br/><br/><br/></span>
+                    </div>
+                </div>
+                <div class="Ajakava">
+                    <div class="000900RegistreerimineJaHommikukohvOsalejatele" style="width: 737px; height: 35.72px">
+                        <span style="color: black; font-size: 24px; font-family: Montserrat; font-weight: bolder; word-wrap: break-word">17.00 - 17.30: 3x3 basketball EST - LAT (men)<br/></span><span
+                            style="color: black; font-size: 24px; font-family: Montserrat; font-weight: 400; word-wrap: break-word">         @ Variku Sports Hall<br/>       <br/><br/><br/><br/></span>
+                    </div>
+                </div>
+                <div class="Ajakava">
+                    <div class="000900RegistreerimineJaHommikukohvOsalejatele" style="width: 737px; height: 33.20px">
+                        <span style="color: black; font-size: 24px; font-family: Montserrat; font-weight: bolder; word-wrap: break-word">17.00 - 18.30: Dinner<br/></span><span
+                            style="color: black; font-size: 24px; font-family: Montserrat; font-weight: 400; word-wrap: break-word">         @ Tartu Vocational College<br/>       <br/><br/><br/><br/></span>
+                    </div>
+                </div>
+                <div class="Ajakava">
+                    <div class="000900RegistreerimineJaHommikukohvOsalejatele" style="width: 737px; height: 37.41px">
+                        <span style="color: black; font-size: 24px; font-family: Montserrat; font-weight: bolder; word-wrap: break-word">19.00 - 23.00:</span><span
+                            style="color: black; font-size: 24px; font-family: Montserrat; font-weight: 400; word-wrap: break-word"> </span><span
+                            style="color: black; font-size: 24px; font-family: Montserrat; font-weight: bolder; word-wrap: break-word">Socialization evening for employees, invited                <br/>                        guests and staf</span><span
+                            style="color: black; font-size: 24px; font-family: Montserrat; font-weight: 400; word-wrap: break-word">f<br/>         <br/>       <br/><br/><br/><br/></span>
+                    </div>
+                </div>
+                <div class="Ajakava">
+                    <div class="000900RegistreerimineJaHommikukohvOsalejatele" style="width: 737px; height: 36.14px">
+                        <span style="color: black; font-size: 24px; font-family: Montserrat; font-weight: bolder; word-wrap: break-word">20.00           : Awarding ceremony in headmasters    <br/>                       competition<br/>                       Socialization evening for students<br/>         <br/></span><span
+                            style="color: black; font-size: 24px; font-family: Montserrat; font-weight: 400; word-wrap: break-word">       <br/><br/><br/><br/></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="AprilButtons"
+             style="padding-left: 6px; padding-right: 6px; padding-top: 3px; padding-bottom: 3px; left: 548px; top: 346px; position: absolute; border-radius: 51px; justify-content: flex-start; align-items: flex-start; gap: 3px; display: inline-flex">
+            <div class="OptionsButtons"
+                 style=" border-radius: 25px; justify-content: flex-start; align-items: flex-start; gap: 10px; display: flex">
+                <a id="button_25" class="Option"
+                   style="color: black; font-size: 24px; font-family: Montserrat; font-weight: 500; word-wrap: break-word;padding:10px"
+                   onclick="showAjakava(25)">April 25th</a>
+            </div>
+            <div class="OptionsButtons"
+                 style=" border-radius: 25px; justify-content: flex-start; align-items: flex-start; gap: 10px; display: flex">
+                <a id="button_26" class="Option"
+                   style="color: black; font-size: 24px; font-family: Montserrat; font-weight: 500; word-wrap: break-word;padding:10px"
+                   onclick="showAjakava(26)">April 26th</a>
+            </div>
+            <div class="OptionsButtons"
+                 style="border-radius: 25px; justify-content: flex-start; align-items: flex-start; gap: 10px; display: flex">
+                <a id="button_27" class="Option"
+                   style="color: black; font-size: 24px; font-family: Montserrat; font-weight: 500; word-wrap: break-word;padding:10px"
+                   onclick="showAjakava(27)">April 27th</a>
+            </div>
+        </div>
+
+
+    </div>
+    <div id="About" class="HistoryPage"
+         style="width: 1440px; height: 1024px; left: 0px; top: 2094px; position: absolute; background: #EF4044">
+		 		<div class="background"
+			 style="width: 20000px; height: 1024px; left:-10000px; top: 0; position: absolute; background:  #EF4044;"></div>
+        <div class="Tekst30p" style="width: 168px; height: 37px; left: 720px; top: 253px; position: absolute">
+            <div class="Tekst30p" style="left: 0px; top: 0px; position: absolute"></div>
+        </div>
+        <div class="Tekst20p" style="width: 54px; height: 24px; left: 57px; top: 383px; position: absolute"></div>
+        <div class="Rectangle4"
+             style="width: 7202px; height: 1034px; left: 720px; top: 0px; position: absolute; background: white"></div>
+        <div class="Suurim72p"
+             style="width: 273px; height: 88px; left: -107px; top: -88px; position: absolute; opacity: 0.16">
+            <div class="Suurim"
+                 style="left: 0px; top: 0px; position: absolute; color: rgba(0, 0, 0, 0.40); font-size: 500px; font-family: Montserrat; font-weight: bolder; word-wrap: break-word">
+                About
+            </div>
+        </div>
+        <img class="VRkpallur"
+             style="width: 184px; height: 568px; left: 767px; top: 456px; position: absolute;transform: scaleX(-1);filter:grayscale(100%); transform-origin: 0 0"
+             src="images/v41_299.png"/>
+            <div class="AvanevDropdownMenu" onclick="showHistory('Mission')"
+         style="padding: 10px; left: 255px; top: 417px; position: absolute; justify-content: center; align-items: center; gap: 19px; display: inline-flex">
+        <div class="Dropdown"
+             style="color: black; font-size: 30px; font-family: Montserrat; font-weight: 600; word-wrap: break-word">
+            Our Mission<i id="MissionArrow" class="fa-solid fa-arrow-right" style="transform: rotate(90deg)"></i>
+        </div>
+    </div>
+
+    <div class="AvanevDropdownMenu" onclick="showHistory('Winners')"
+         style="padding: 10px; left: 255px; top: 484px; position: absolute; justify-content: center; align-items: center; gap: 19px; display: inline-flex">
+        <div class="Dropdown"
+             style="color: black; font-size: 30px; font-family: Montserrat; font-weight: 600; word-wrap: break-word">
+            Winners
+
+            <i id="WinnersArrow" class="fa-solid fa-arrow-right" style="transform: rotate(180deg)"></i>
+        </div>
+    </div>
+
+    <div class="AvanevDropdownMenu" onclick="showHistory('History')"
+         style="padding: 10px; left: 255px; top: 551px; position: absolute; justify-content: center; align-items: center; gap: 19px; display: inline-flex">
+        <div class="Dropdown"
+             style="color: black; font-size: 30px; font-family: Montserrat; font-weight: 600; word-wrap: break-word">
+            History<i id="HistoryArrow" class="fa-solid fa-arrow-right" style="transform: rotate(180deg)"></i></div>
+    </div>
+        <div id="Mission" class="OurMission" style="width: 264px; height: 218px; left: 816px; top: 380px; position: absolute; display: block">
+            <div class="Tekst24p"
+                 style="width: 523.88px; height: 218px; left: 0px; top: 0px; position: absolute; color: black; font-size: 24px; font-family: Montserrat; font-weight: 400; word-wrap: break-word">
+                The Baltic States - Estonian, Latvian and Lithuanian - sports games in vocational<br/>education aim is
+                to
+                promote the growth of athletic results as well as to strengthen the<br/>friendship between the young
+                people,
+                educators, educational institutions and the management.<br/><br/>Instructions for Baltic Games 2024-2027
+                can
+                be found HERE
+            </div>
+        </div>
+
+        <div id="Winners" class="Winners" style="width: 289px; height: 370px; left: 816px; top: 380px; position: relative; display: none">
+            <div class="Tekst24p" style="width: 573.48px; height: 370px; left: 0px; top: 0px; position: absolute"><span style="color: black; font-size: 24px; font-family: Montserrat; font-weight: 400; line-height: 44px; word-wrap: break-word">XX Tartu 17-19.05.2012                     RESULTS <br/>XXI Panevežnis 23-25.05.2013       RESULTS<br/>XXII Smiltene 8-10.05.2014            RESULTS<br/>XXIII Viljandi 23-25.05.2015            RESULTS <br/>XXIV Kedainai 26-28.04.2016        RESULTS<br/>XXV Jelgava 27-29.04.2017            RESULTS<br/>XXVI Pärnu 26-28.04.2018             RESULTS <br/>XXVII Kaunas 9-11.05.2019              RESULTS <br/>XXVIII Ogre 27-29.04.2023             RESULTS <br/></span><span style="color: black; font-size: 24px; font-family: Montserrat; font-weight: 400; word-wrap: break-word"><br/><br/><br/></span></div>
+        </div>
+
+        <div id="History" class="History" style="width: 272px; height: 213px; left: 816px; top: 380px; position: relative; display: none">
+            <div class="Tekst24p" style="width: 539.75px; height: 213px; left: 0px; top: 0px; position: absolute"><span style="color: black; font-size: 24px; font-family: Montserrat; font-style: italic; font-weight: 400; word-wrap: break-word">“For some time I (I.Bukovska) had an idea about the necessity of Sports Games for<br/>students and teachers involved vocational education in the Baltic States. After getting<br/>acquainted with the representative of Estonian vocational education - a very athletic gentleman - I thought to myself: "Now is the right time to start the negotiations ". The choice was right, the support was received immediately. "If Tallinn does not involve after a few months (the games were in autumn of the same year) then there are three educational institutions in Tartu and Estonia will have a teom", summarizes Mr Sokman.”<br/></span><span style="color: black; font-size: 24px; font-family: Montserrat; font-weight: 400; word-wrap: break-word">Read more HERE.</span></div>
+        </div>
+
+
+
+
+
+        </div>
+<script src="https://kit.fontawesome.com/9616f6d837.js" crossorigin="anonymous">
+
+
+</script>
+
+
+
+
+<script>
+    function showAjakava(day) {
+        const ajakava25 = document.getElementById("Ajakava25");
+        const ajakava26 = document.getElementById("Ajakava26");
+        const ajakava27 = document.getElementById("Ajakava27");
+
+
+
+        if (day === 26) {
+            ajakava26.style.display = "block";
+            ajakava27.style.display = "none";
+            ajakava25.style.display = "none";
+        } else if (day === 27) {
+            ajakava26.style.display = "none";
+            ajakava27.style.display = "block";
+            ajakava25.style.display = "none";
+        } else if (day === 25) {
+            ajakava26.style.display = "none";
+            ajakava27.style.display = "none";
+            ajakava25.style.display = "block";
+        }
+    }
+
+
+    function showHistory(I) {
+    const mission = document.getElementById("Mission");
+    const winners = document.getElementById("Winners");
+    const history = document.getElementById("History");
+
+    const missionArrow = document.getElementById("MissionArrow");
+    const winnersArrow = document.getElementById("WinnersArrow");
+    const historyArrow = document.getElementById("HistoryArrow");
+
+
+    if (I === "Mission") {
+        mission.style.display = "block";
+        winners.style.display = "none";
+        history.style.display = "none";
+        missionArrow.style.transform = "rotate(90deg)";
+        winnersArrow.style.transform = "rotate(180deg)";
+        historyArrow.style.transform = "rotate(180deg)";
+    } else if (I === "Winners") {
+        mission.style.display = "none";
+        winners.style.display = "block";
+        history.style.display = "none";
+        winnersArrow.style.transform = "rotate(90deg)";
+        missionArrow.style.transform = "rotate(180deg)";
+        historyArrow.style.transform = "rotate(180deg)";
+    } else if (I === "History") {
+        mission.style.display = "none";
+        winners.style.display = "none";
+        history.style.display = "block";
+        historyArrow.style.transform = "rotate(90deg)";
+        missionArrow.style.transform = "rotate(180deg)";
+        winnersArrow.style.transform = "rotate(180deg)";
+    }
+    }
+</script>
+</body>
