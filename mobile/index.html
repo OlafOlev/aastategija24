@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <style>
         .container {
@@ -70,15 +70,22 @@
             align-items: center;
         }
         .scroll-container {
-            width:399px;
+            width:370px;
             max-height: 500px;
             overflow-y: scroll;
             overflow-x: hidden;
         }
+        @media screen and (max-width:360px){
+            body{
+                width:100%;
+            }
+        }
 
 
     </style>
-<body style="width:50px;overflow-x: hidden">
+
+<body style="width: 430px;overflow-x: hidden;posistion:relative">
+    
 <div class="MainPage" style="width: 430px; height: 3935px; position: relative">
     <div class="Frame1"
          style="width: 161px; height: 113px; padding: 10px; left: 251px; top: 23px; position: absolute"></div>
@@ -182,7 +189,7 @@
         </div>
     </div>
 
-    <div class="Rectangle1" style="width:450px; height: 721px; ; top: 4210px;left:-10px; position: absolute; background: black"></div>
+    <div class="Rectangle1" style="width:532px; height: 721px; ; top: 4210px;left:-10px; position: absolute; background: black"></div>
     <div class="Group7" style="width: 343px; height: 330px; left:20px; top: 4329px; position: absolute">
         <div class="RegNumber80110180Telefon37256111866EPostTiitEkkslEeAardla23bTartuSkypeEkkslEvssfWwwEkkslEeTiitTammaruPeasekretRSecretaryGeneral"
              style="left: 41px; top: 0px; position: absolute"><span
@@ -242,7 +249,7 @@
         </div>
     </div>
 </div>
-<div class="NdPage" style="width: 430px; height: 740px; left: 0px; top: 972px; position: absolute; background: #00B89D">
+<div class="NdPage" style="width: 532px; height: 740px; left: 0px; top: 972px; position: absolute; background: #00B89D">
     <div class="Frame2"
          style="width: 428px; padding: 10px; left: 0px; top: 34px; position: absolute; justify-content: center; align-items: center; gap: 10px; display: inline-flex">
         <div class="Schedule"
@@ -272,11 +279,11 @@
         </div>
     </div>
     <div class="Rectangle6"
-         style="width: 430px; height: 480px; left: 0px; top: 260px; position: absolute; background: white"></div>
+         style="width: 532px; height: 481px; left: 0px; top: 260px; position: absolute; background: white"></div>
     <div class="April27th"
          style="width: 428px; height: 500px; left: 2px; top: 229px; position: absolute">
         <div class="Rectangle6"
-             style="width: 428px; height: 290px; left: 0px; top: 33px; position: absolute; background: white"></div>
+             style="width: 438px; height: 290px; left: 0px; top: 33px; position: absolute; background: white"></div>
         <div class="Frame10" style="width: 386px; height: 326px; left: 18px; top: 15px; position: absolute"></div>
         <div class="Frame11" style="width: 364px; height: 320px; left: 29px; top: 32px; position: absolute">
             <div id=Ajakava25 class="Tekst14p">
@@ -390,7 +397,7 @@
             </div>
             </div>
             <img class="Korvpallurid"
-         style="width: 249px; height: 439px; left: 235px; top: 500px; position: absolute; z-index:-1;filter:grayscale(100%);"
+         style="width: 249px; height: 439px; left: 200px; top: 500px; position: absolute; z-index:-1;filter:grayscale(100%);"
          src="images/v468_1219.png"/>
         </div>
         
@@ -403,14 +410,12 @@
 
 </script>
 <script>
-    // Funktsioon, mis kuvab valitud päeva ajakava
     function showAjakava(day) {
-        // Leia vastavad HTML elemendid päeva id-de põhjal
         const ajakava25 = document.getElementById("Ajakava25");
         const ajakava26 = document.getElementById("Ajakava26");
         const ajakava27 = document.getElementById("Ajakava27");
 
-        // Kontrolli, millise päeva ajakava kuvada ja peita teised
+
         if (day === 26) {
             ajakava26.style.display = "block";
             ajakava27.style.display = "none";
@@ -426,6 +431,5 @@
         }
     }
 </script>
-
 </body>
 </html>
