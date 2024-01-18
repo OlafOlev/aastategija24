@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Device Redirect</title>
+</head>
+<body>
+    <!-- Content if JavaScript is disabled or redirection fails -->
+    <p>If you are not redirected, <a href="./desktop">click here</a>.</p>
+
+    <!-- Move the script tag to the bottom and add async attribute -->
+    <script async>
+        // Function to check if the device is mobile
+        function isMobileDevice() {
+            return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+        }
+
+        // Function to redirect based on the device
+        function redirectBasedOnDevice() {
+            var targetURL = isMobileDevice() ? './mobile' : './desktop';
+            window.location.href = targetURL;
+        }
+
+        // Auto-run the redirect function when the page loads
+        window.onload = redirectBasedOnDevice;
+    </script>
+</body>
+</html>
